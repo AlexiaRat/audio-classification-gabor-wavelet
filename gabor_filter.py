@@ -1,13 +1,3 @@
-"""
-Gabor Filter Implementation
-============================
-Implements Gabor filters (Gaussian × cos/sin) and constructs a filter bank
-of M=12 filters distributed on the Mel frequency scale.
-
-A Gabor filter provides optimal time-frequency localization, making it
-ideal for analyzing stationary segments in audio signals.
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.fft
