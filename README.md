@@ -51,10 +51,10 @@ Random Forest outperforms KNN by ~10-13%, and Gabor filters provide a slight edg
 ## Project Structure
 
 ```
-├── filtru_gabor.py             # Gabor filter implementation & filter bank
+├── gabor_filter.py             # Gabor filter implementation & filter bank
 ├── mexican_hat.py              # Mexican Hat Wavelet filter & filter bank
 ├── get_features.py             # Windowed feature extraction pipeline
-├── clasificare_completa.py     # Classification, evaluation & visualization
+├── full_classification.py     # Classification, evaluation & visualization
 └── screenshots/
     ├── comparison.png
     ├── detailed_comparison.png
@@ -91,9 +91,9 @@ pip install numpy scipy scikit-learn matplotlib
 Place `data.mat` (audio dataset) in the project directory, then:
 
 ```bash
-python filtru_gabor.py              # Generate Gabor filter visualizations
+python gabor_filter.py              # Generate Gabor filter visualizations
 python mexican_hat.py               # Generate Mexican Hat filter visualizations
-python clasificare_completa.py      # Run classification and generate results
+python full_classification.py      # Run classification and generate results
 ```
 
 ---
