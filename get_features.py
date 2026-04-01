@@ -1,17 +1,5 @@
-"""
-Feature Extraction Pipeline
-============================
-Segments audio into overlapping windows and extracts filter-based features.
-
-For each audio file:
-  1. Split into windows (1102 samples, 12ms hop)
-  2. Apply filter bank via matrix multiplication (efficient dot product)
-  3. Compute magnitude from cos/sin filter responses
-  4. Extract mean + std per filter → 2M-dimensional feature vector
-"""
-
 import numpy as np
-from filtru_gabor import create_gabor_filterbank
+from gabor_filter import create_gabor_filterbank
 from mexican_hat import create_mexican_hat_filterbank
 
 M = 12       # Number of filters in the bank
