@@ -1,19 +1,3 @@
-"""
-Audio Classification — Comparative Evaluation
-===============================================
-Compares 4 classifier-filter combinations on audio data:
-  - KNN (k=5) + Gabor filters
-  - KNN (k=5) + Mexican Hat filters
-  - Random Forest (100 trees) + Gabor filters
-  - Random Forest (100 trees) + Mexican Hat filters
-
-Generates comparison charts and confusion matrix for the best model.
-
-Usage:
-    Place data.mat in the project directory and run:
-    $ python clasificare_completa.py
-"""
-
 import numpy as np
 from get_features import get_features, get_features_mexican
 from sklearn.neighbors import KNeighborsClassifier
