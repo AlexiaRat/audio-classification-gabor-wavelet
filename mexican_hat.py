@@ -1,13 +1,3 @@
-"""
-Mexican Hat Wavelet Filter Implementation
-==========================================
-Implements Mexican Hat (Ricker) wavelet filters — the second derivative
-of a Gaussian function: ψ(t) = (1 - t²) × exp(-t²/2).
-
-Effective at detecting rapid changes and transients in audio signals,
-complementing Gabor's steady-state frequency analysis.
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.fft
